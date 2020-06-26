@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "name": "Doctolib",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.png",
+  "slug": "doctolib",
+  "source": "git@github.com:konnectors/doctolib.git",
+  "editor": "Cozy",
+  "vendor_link": "https://www.doctolib.fr/sessions/new",
+  "categories": ["health"],
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    }
+  },
+  "folders": [
+    {
+      "defaultDir": "$administrative/$konnector/$account"
+    }
+  ],
+  "data_types": [
+    "document"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère les documents doctolib",
+      "long_description": "Récupère les documents doctolib",
+      "permissions": {
+        "files": {
+          "description": "Utilisé pour sauvegarder les documents"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Fetch the doctolib documents",
+      "long_description": "Fetch the doctolib documents",
+      "permissions": {
+        "files": {
+          "description": "Required to save the bills"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        }
+      }
+    }
+  },
+  "manifest_version": "2"
+}
